@@ -16,7 +16,7 @@ public class Grid : MonoBehaviour
         vertices = new Vector3[(xSize + 1) * (ySize + 1)];
         Vector2[] uv = new Vector2[vertices.Length];
         Vector4[] tangents = new Vector4[vertices.Length];
-        Vector4 tangent = new Vector4(1f, 0f, 0f, -1f);
+        Vector4 tangent = new Vector4(0.5f, 0f, 0f, -1f);
         for (int i = 0, y = 0; y <= ySize; y++)
         {
             for (int x = 0; x <= xSize; x++, i++)
